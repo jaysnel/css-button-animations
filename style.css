@@ -1,0 +1,58 @@
+body {
+  background-color: #1b2432;
+}
+
+#page-title {
+  text-align: center;
+  color: #b76d68;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 1200px;
+  margin: auto;
+}
+.button-section .button {
+  background: transparent;
+  border: 1px solid #b76d68;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 125px;
+  padding: 15px;
+  margin: 5px;
+}
+.button-section .button:hover {
+  cursor: pointer;
+  color: #b76d68;
+}
+.button-section .button1 {
+  box-shadow: 0 0 40px 40px #b76d68 inset;
+  transition: all 500ms ease-in-out;
+}
+.button-section .button1:hover {
+  box-shadow: 0 0 0px 0px #2c2b3c inset;
+}
+.button-section .button2 {
+  box-shadow: 0 0 40px 40px #b76d68 inset, 0 0 0 0 #b76d68;
+  transition: all 500ms ease-in-out;
+}
+.button-section .button2:hover {
+  box-shadow: 0 0 10px 0 #b76d68 inset, 0 0 10px 4px #b76d68;
+}
+.button-section .button3 {
+  background-image: linear-gradient(45deg, #b76d68 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  color: #b76d68;
+  transition: all 500ms ease-in-out;
+}
+.button-section .button3:hover {
+  background-position: 0;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */

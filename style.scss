@@ -1,0 +1,78 @@
+$font-stack: Helvetica, sans-serif;
+$white: #fff;
+$black: #000;
+$primary-color: #b76d68;
+$secondary-color: #2c2b3c;
+$alternate-color-1: #1b2432;
+$alternate-color-2: #121420;
+$alternate-color-3: #403f4c;
+
+body {
+  background-color: $alternate-color-1;
+}
+
+#page-title {
+  text-align: center;
+  color: $primary-color;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 1200px;
+  margin: auto;
+
+  .button {
+    background: transparent;
+    border: 1px solid $primary-color;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 100%;
+    width: 125px;
+    padding: 15px;
+    margin: 5px;
+
+    &:hover {
+      cursor: pointer;
+      color: $primary-color;
+    }
+  }
+
+  .button1 {
+    box-shadow: 0 0 40px 40px $primary-color inset;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 0px 0px $secondary-color inset;
+    }
+  }
+
+  .button2 {
+    box-shadow: 0 0 40px 40px $primary-color inset, 0 0 0 0 $primary-color;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 10px 0 $primary-color inset, 0 0 10px 4px $primary-color;
+    }
+  }
+
+  .button3 {
+    background-image: linear-gradient(
+      45deg,
+      $primary-color 50%,
+      transparent 50%
+    );
+    background-position: 100%;
+    background-size: 400%;
+    color: $primary-color;
+
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      background-position: 0;
+      color: $black;
+    }
+  }
+}
